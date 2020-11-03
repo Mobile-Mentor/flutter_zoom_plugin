@@ -135,6 +135,9 @@ public class ZoomView  implements PlatformView,
         opts.no_dial_in_via_phone = parseBoolean(options, "disableDialIn", false);
         opts.no_disconnect_audio = parseBoolean(options, "noDisconnectAudio", false);
         opts.no_audio = parseBoolean(options, "noAudio", false);
+        // MM customization to hide UI elements 
+        opts.no_titlebar = parseBoolean(options, "noTitlebar", false);
+        opts.no_bottom_toolbar = parseBoolean(options, "noBottomToolbar", false);
 
         JoinMeetingParams params = new JoinMeetingParams();
 
